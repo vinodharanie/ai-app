@@ -34,8 +34,7 @@ Content-Type: {{contentType}}
 
 {
   "name": "DevOps Engineering",
-  "techstack": "Docker, Kubernetes, CI/CD, AWS",
-  "learningPath": "Linux -> Containerization -> Orchestration -> Cloud"
+  "techstack": "Docker, Kubernetes, CI/CD, AWS"
 }
 
 ### Update Software Engineering record (ID: 1)
@@ -44,8 +43,7 @@ Content-Type: {{contentType}}
 
 {
   "name": "Advanced Java Development",
-  "techstack": "Spring Boot 3, Spring AI, Hibernate, MySQL 8",
-  "learningPath": "Beginner -> Intermediate -> Advanced -> Expert"
+  "techstack": "Spring Boot 3, Spring AI, Hibernate, MySQL 8"
 }
 
 ### Update Software Engineering record (ID: 2)
@@ -54,8 +52,7 @@ Content-Type: {{contentType}}
 
 {
   "name": "Modern Full Stack Web Development",
-  "techstack": "React 18, Next.js, Node.js, TypeScript, PostgreSQL",
-  "learningPath": "HTML/CSS -> JavaScript -> React -> Full Stack"
+  "techstack": "React 18, Next.js, Node.js, TypeScript, PostgreSQL"
 }
 
 ### Delete Software Engineering record (ID: 3)

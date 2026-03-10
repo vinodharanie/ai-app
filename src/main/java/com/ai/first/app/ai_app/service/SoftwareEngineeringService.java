@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.ai.first.app.ai_app.client.AIService;
+import com.ai.first.app.ai_app.client.AIClient;
 import com.ai.first.app.ai_app.model.SoftwareEngineering;
 import com.ai.first.app.ai_app.repository.SoftwareEngineeringRepository;
 
@@ -13,11 +13,11 @@ import com.ai.first.app.ai_app.repository.SoftwareEngineeringRepository;
 public class SoftwareEngineeringService {
 
     private final SoftwareEngineeringRepository repository;
-    private final AIService aiService;
+    private final AIClient aIClient;
 
-    public SoftwareEngineeringService(SoftwareEngineeringRepository repository, AIService aiService) {
+    public SoftwareEngineeringService(SoftwareEngineeringRepository repository, AIClient aIClient) {
         this.repository = repository;
-        this.aiService = aiService;
+        this.aIClient = aIClient;
     }
 
     public List<SoftwareEngineering> getAllSoftwareEngineering() {
@@ -33,7 +33,7 @@ public class SoftwareEngineeringService {
         String prompt = "Based on the programming tech stack " + softwareEngineering.getTechstack() + 
                         " that " + softwareEngineering.getName() + 
                         " has given, provide a full learning path for this person";
-        String learningPath = aiService.chat(prompt);
+        String learningPath = aIClient.chat(prompt);
         softwareEngineering.setLearningPath(learningPath);
         return repository.save(softwareEngineering);
     }
@@ -48,7 +48,7 @@ public class SoftwareEngineeringService {
                 String prompt = "Based on the programming tech stack " + softwareEngineeringDetails.getTechstack() + 
                                 " that " + softwareEngineeringDetails.getName() + 
                                 " has given, provide a full learning path for this person";
-                String learningPath = aiService.chat(prompt);
+                String learningPath = aIClient.chat(prompt);
                 existing.setLearningPath(learningPath);
             } else {
                 existing.setLearningPath(softwareEngineeringDetails.getLearningPath());
