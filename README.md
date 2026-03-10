@@ -74,7 +74,7 @@ USE ai_app_db;
 
 ---
 
-## Environment Configuration (.env)
+## Environment Configuration
 
 Create a `.env` file in project root:
 
