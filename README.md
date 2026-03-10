@@ -12,7 +12,7 @@ A Spring Boot REST API that generates **personalized learning paths** using **Sp
 2. [Project Setup](#project-setup)  
 3. [Database Configuration](#database-configuration)  
 4. [OpenAI API Key Setup](#openai-api-key-setup)  
-5. [Environment Configuration (.env)](#environment-configuration)  
+5. [Environment Configuration](#environment-configuration)  
 6. [Building the Project](#building-the-project)  
 7. [Running the Application](#running-the-application)  
 8. [Testing with REST Client](#testing-with-rest-client)  
@@ -145,7 +145,8 @@ Use `requests.http` in VS Code:
 src/main/java/com/ai/first/app/ai_app/
 ├─ model/SoftwareEngineering.java
 ├─ repository/SoftwareEngineeringRepository.java
-├─ service/SoftwareEngineeringService.java, AiService.java
+├─ service/SoftwareEngineeringService.java
+├─ client/AiService.java
 ├─ controller/SoftwareEngineeringController.java
 ├─ config/EnvConfig.java
 ```
@@ -154,4 +155,6 @@ src/main/java/com/ai/first/app/ai_app/
 - `Service` → business logic + AI integration  
 - `Controller` → REST endpoints  
 - `Model` → JPA entity
+- `Repository` → DB access layer
+- `Client` → OpenAI API connecting layer
 
