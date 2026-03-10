@@ -1,0 +1,62 @@
+### Variables
+@baseUrl = http://localhost:8080
+@contentType = application/json
+
+### Get all Software Engineering records
+GET {{baseUrl}}/api/software-engineering
+Accept: {{contentType}}
+
+### Get Software Engineering by ID
+GET {{baseUrl}}/api/software-engineering/1
+Accept: {{contentType}}
+
+### Create a new Software Engineering record
+POST {{baseUrl}}/api/software-engineering
+Content-Type: {{contentType}}
+
+{
+  "name": "Java Development",
+  "techstack": "Spring Boot, Hibernate, MySQL"
+}
+
+### Create another Software Engineering record
+POST {{baseUrl}}/api/software-engineering
+Content-Type: {{contentType}}
+
+{
+  "name": "Full Stack Web Development",
+  "techstack": "React, Node.js, PostgreSQL"
+}
+
+### Create a third Software Engineering record
+POST {{baseUrl}}/api/software-engineering
+Content-Type: {{contentType}}
+
+{
+  "name": "DevOps Engineering",
+  "techstack": "Docker, Kubernetes, CI/CD, AWS",
+  "learningPath": "Linux -> Containerization -> Orchestration -> Cloud"
+}
+
+### Update Software Engineering record (ID: 1)
+PUT {{baseUrl}}/api/software-engineering/1
+Content-Type: {{contentType}}
+
+{
+  "name": "Advanced Java Development",
+  "techstack": "Spring Boot 3, Spring AI, Hibernate, MySQL 8",
+  "learningPath": "Beginner -> Intermediate -> Advanced -> Expert"
+}
+
+### Update Software Engineering record (ID: 2)
+PUT {{baseUrl}}/api/software-engineering/2
+Content-Type: {{contentType}}
+
+{
+  "name": "Modern Full Stack Web Development",
+  "techstack": "React 18, Next.js, Node.js, TypeScript, PostgreSQL",
+  "learningPath": "HTML/CSS -> JavaScript -> React -> Full Stack"
+}
+
+### Delete Software Engineering record (ID: 3)
+DELETE {{baseUrl}}/api/software-engineering/4
