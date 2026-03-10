@@ -12,7 +12,7 @@ A Spring Boot REST API that generates **personalized learning paths** using **Sp
 2. [Project Setup](#project-setup)  
 3. [Database Configuration](#database-configuration)  
 4. [OpenAI API Key Setup](#openai-api-key-setup)  
-5. [Environment Configuration](#environment-configuration)  
+5. [Environment Configuration (.env)](#environment-configuration)  
 6. [Building the Project](#building-the-project)  
 7. [Running the Application](#running-the-application)  
 8. [Testing with REST Client](#testing-with-rest-client)  
